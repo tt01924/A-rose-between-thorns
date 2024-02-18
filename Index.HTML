@@ -6,31 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Whack a Mole Game using JavaScript - @code.scientist x @codingtorque</title>
+    <title>A Rose Between Thorns Game using JavaScript</title>
 </head>
 <body>
-    <h1>Whack-a-mole! <span class="score">0</span></h1>
-    <div class="controls">
-        <button onClick="startGame()">Start!</button>
+    <h1>A Rose Between Thorns</h1>
+    <p class="finalScore">Game Over, your score is: </p>
+      <h2><span class="score">0</span></h2>
+
+      <div class="instructions">
+        <p>Welcome to A Rose Between Thorns!</p>
+        <p>Click below for instructions</p>
+      </div>
+    
+    <div class = 'controls'>
+    <!-- Button to show instructions -->
+      <button id="showInstructions" class="instructionsButton">Instructions</button>
+    <!-- Button to open leaderboard popup -->
+      <button id="openLeaderboard" class="leaderboardButton">Open Leaderboard</button>
+      <button onClick="startGame()" class="startButton">Start Gathering!</button>
     </div>
+
     <div class="game">
         <div class="hole hole1">
-            <div class="mole"></div>
+            <div class="rose"></div>
+            <div class="thorn"></div>
         </div>
         <div class="hole hole2">
-            <div class="mole"></div>
+            <div class="rose"></div>
+            <div class="thorn"></div>
         </div>
         <div class="hole hole3">
-            <div class="mole"></div>
+            <div class="rose"></div>
+            <div class="thorn"></div>
         </div>
         <div class="hole hole4">
-            <div class="mole"></div>
+            <div class="rose"></div>
+            <div class="thorn"></div>
         </div>
         <div class="hole hole5">
-            <div class="mole"></div>
+            <div class="rose"></div>
+            <div class="thorn"></div>
         </div>
         <div class="hole hole6">
-            <div class="mole"></div>
+            <div class="rose"></div>
+            <div class="thorn"></div>
+        </div>
+    </div>
+
+
+<!-- Popup leaderboard container -->
+<div id="leaderboardPopup" class="popupLeaderboard">
+    <div class="popup-contentLeaderboard">
+        <span class="closeLeaderboard" id="closeLeaderboard">&times;</span>
+        <h2>Leaderboard</h2>
+        <div id="leaderboardContent"></div>
+    </div>
+</div>
+
+    <!-- Hidden instructions popup -->
+    <div id="instructionsPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closeInstructions">&times;</span>
+            <h2>Game Instructions</h2>
+            <p>You are a medieval knight who has just slain his first dragon. 
+                Now, before you meet your damsel in distress, you wish to collect her a beautiful bouquet of roses. 
+                However, beware the poisonous thorns in the rose bush! 
+                Should you prick your finger, you shall never see your beautiful Dame again! 
+            </p>
+            <p>Objective:</p>
+            <p>Try to pick as many roses as possible and avoid the thorns in the limited amount of time you have. 
+                Should you pick a thorn, your game shall end and the number of roses you have collected shall be recorded</p>
         </div>
     </div>
     <script src="script.js"></script>
