@@ -60,7 +60,7 @@ h1 {
   margin: 0 auto;
 }
 .hole {
-  background: url(Cartoon\ bush.png) bottom center no-repeat;
+  background: url(cartoonBush.png) bottom center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
@@ -115,7 +115,7 @@ h1 {
   cursor: pointer;
 }
 .hole:after {
-  background: url(Cartoon\ bush.png) bottom center no-repeat;
+  background: url(cartoonBush.png) bottom center no-repeat;
     bottom: center no-repeat;
   background-size: contain;
   content: "";
@@ -128,7 +128,7 @@ h1 {
   margin: 0 auto;
 }
 .rose {
-  background: url(cartoon\ rose.png) bottom center no-repeat;
+  background: url(cartoonRose.png) bottom center no-repeat;
   bottom: center no-repeat;
   background-size: 60%;
   position: relative;
@@ -138,7 +138,7 @@ h1 {
   transition: all 0.4s;
 }
 .thorn {
-  background: url(Cartoon\ Thorn.png) bottom center no-repeat;
+  background: url(cartoonThorn.png) bottom center no-repeat;
     bottom: center no-repeat;
   background-size: 60%;
   position: relative;
